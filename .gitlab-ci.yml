@@ -1,0 +1,40 @@
+stages:
+ - build
+ - test
+ - buid
+ - deploy
+
+test:
+  image: node:latest
+  stage: test
+  script:
+    - npm run build-client
+    - npm run build-api
+    - npm run lint-client
+    - npm run lint-api
+    - npm run test-api
+
+build:
+  image: node:latest
+  stage: build
+  only:
+    refs:
+      - develop
+  script:
+    - npm run build-client
+    - npm run build-api
+  artifacts:
+      paths:
+        - client/build/
+        - api/dist
+
+deploy:
+  image: google/cloud-sdk:alpine
+  stage: deploy
+  only:
+    refs:
+      - develop
+  script:
+  - gcloud auth activate-service-account --key-file maximal-run-296520-c6c5588f5801.json
+  - mv client/build api/client
+  - cd api && gcloud --quiet --project maximal-run-296520 app deploy staging-app.yaml

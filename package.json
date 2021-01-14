@@ -1,0 +1,29 @@
+{
+  "name": "team4",
+  "version": "1.0.0",
+  "description": "Ett system för att köpa och sälja närodlat",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:client",
+    "test:client": "docker exec -it project_client_1 npm test",
+    "lint:fix": "docker exec -it project_client_1 npm lint:fix",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test-client": "cd client && npm run test",
+    "test-api": "cd api && npm run test",
+    "lint-client": "cd client && npm run lint",
+    "lint-api": "cd api && npm run lint",
+    "build-client": "cd client && npm install && npm run build",
+    "build-api": "cd api && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrWolfmeister/GreenDay.git"
+  },
+  "author": "Team 4 @ 2DV612 2020",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^5.6.0"
+  },
+  "dependencies": {}
+}

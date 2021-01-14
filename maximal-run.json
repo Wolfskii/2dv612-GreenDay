@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "maximal-run-296520",
+  "private_key_id": "7843139b3d98c1b347b7f4881616fec6444177c9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDmmCDjwtJs9NR3\naskEjKkQb4lTZYq1tEPuooh5eil28f7ZfuwWI6sjOvyen9qc+LdVT8M8vGRn+aAP\nMUzIKxjpzzhWMKQELiE/BXPlr+duw5gi7OHvEWIZHLuFHw1n/QXT70r2L5Qu7GeR\nrj7xMzgTOt71EgLH7fFfoh/PY5yhJOpId6YecqP99PLBMXe/1zGusCeaEOn4CIiQ\n7pZOfc190DnQakS/KGQVbAPjT98oPg1VdC59J1Hlt+tGo4e03XxTDi8Cguw0F8Bm\n/c3ZC8jFBbvpC95HBxDBG1tL6dRwNQxhpUeAh5Z1GT5tWBaEoROHwy7BLAFpdkv/\nkce0/qC9AgMBAAECggEAA1jopqW+AZA5l/+C1NVojDEySyBJjS2wDBdr57za5pEe\nDpuFuHnivWuDyJcFc2CLjhTO/ri1XxUD5R86wBpwDXomlTRg4namS5CRXXTaOoS4\nVqQdpidtxx41p/m1a3Gu007BRdBBqb9gxCqasKGlChJsCMlZelF9PtLO/LxeGltf\nGpyuiWrdKW3Jwzrg1f5mZPYnGBDx2tS596iI2Vco074rJiVRv0qqf+osZ3JRGaur\naJJyW5ObtekN7ofNZYU4qb+GtcUkQSuZDfq8Lredy9fqgBoLUQ5uJOdYy52AaLgC\n6AeuNr8Q1i/OcId6Kj0t1Sd99NmKTq+pGRuD2Z5rgQKBgQD2hm7tosD0t19x17Dg\nTSoaO6RIdY3rnpvKz6kt4QemaEGb70VeR5Kk3mgTUkTz4naNYU1UCu6G7iGhBtXL\n8pfoYvF6eKatThazQKEPXieBWYdyDkN0mOrUjFl0rNJvqyc/K4VuRINbP2jzddxD\nZgdUlXe/sv33DQ5xzi1ds5yprQKBgQDvdPNsCIC7k0ox4fl814YO1KuzIaGDKehP\ngF+kjy+au2k90TssoGBXuctYAG8OFDzk46+ppNIworSmkjf0z2GDte+7i4PL0iF2\nNgbE6AT4c3bXNwakDADSuGSEDYUtoq0HJUhTpeAa8KCESJf7j3BJLBAc+pTh74Um\n8p4aDEDVUQKBgBHXYtnR6JMNXlv31zY0f3KMlHQmBdJilTXVV5IZchtJ+k2VwHh1\nR5ik+/VCA/l+j0PmIdmOPPsI6ugjfX+YHARWfNF3P+DVAPGSINXi44sJ9rJ7c8hR\ndNVTHvpBs60fPuTkenCjhroo2aidBAbgsHEfrB30j0q86Cm2WTQp1pG1AoGBAN/9\njhZofcL4rFatAyt8j7IfzdzqgKKo+N4lP1I3flhHJtLkfW3pNzXYXhYbkcaht7SE\nJzWRL+y+xi1qaV1e/+Cst2u/vbFTBmoFb5+RSdT+bRQ0LMoXUE3MnnnIC+P8X85n\nWZileVS58ezL2x89tdM8nHX/EHWoD+221Z2YCK2BAoGAWyITy2Me1JlVb0Sf/2rV\nl34aMsSB9cuMMsOxT7PpI7nK1Lw/DrrAA0LbuIz0jwZROUkAgvP/i9k19F81VeKB\nrE6JyDrhA3pSHKUil690FhqYg5qD4CTOEio1gMGacKCduBdh88KAQhvGfKneVVGA\nLKYb7+/B91Dwvcem5NPxcEI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "gitlab-service-account@maximal-run-296520.iam.gserviceaccount.com",
+  "client_id": "117691055766055458800",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gitlab-service-account%40maximal-run-296520.iam.gserviceaccount.com"
+}

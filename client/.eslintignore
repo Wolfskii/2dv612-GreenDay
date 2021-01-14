@@ -1,0 +1,6 @@
+# Ignore build
+build
+
+# Ignored files
+src/react-app-env.d.ts
+src/reportWebVitals.ts

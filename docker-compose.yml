@@ -1,0 +1,57 @@
+version: '3'
+services:
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile.dev
+    ports:
+      - 3000:3000
+    volumes:
+      - ./client:/usr/src/app
+      # Anonymous volume to prevent overwrite
+      - /usr/src/app/node_modules
+    environment:
+      CHOKIDAR_USEPOLLING: 'true'
+      REACT_APP_API_URL: http://localhost:4000 # The requests are sent from the local browser (outside Docker network)
+
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile.dev
+    depends_on:
+      - mysql
+    ports:
+      - 4000:4000
+    volumes:
+      - ./api:/usr/src/app
+      # Anonymous volume to prevent overwrite
+      - /usr/src/app/node_modules
+
+    environment:
+      # https://github.com/ufoscout/docker-compose-wait/
+      WAIT_HOSTS: mysql:3306
+      MYSQL_HOST: mysql
+      MYSQL_DATABASE: app
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: dev
+      TOKEN_SECRET: awfaofinaogfanoig
+
+  mysql:
+    image: mysql
+    restart: always
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - 3306:3306
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: app
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: dev
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080

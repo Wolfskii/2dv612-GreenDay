@@ -1,0 +1,19 @@
+runtime: nodejs10
+service: staging-client
+
+handlers:
+# Serve all static files with url ending with a file extension
+- url: /(.*\..+)$
+  static_files: \1
+  upload: (.*\..+)$
+# Catch all handler to index.html
+- url: /.*
+  static_files: index.html
+  upload: index.html
+
+  env_variables:
+    MYSQL_HOST: '104.155.114.48:3306'
+    MYSQL_DATABASE: 'app'
+    MYSQL_USER: 'root'
+    MYSQL_PASSWORD: 'root'
+    TOKEN_SECRET: awfaofinaogfanoig

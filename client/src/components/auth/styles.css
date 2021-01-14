@@ -1,0 +1,14 @@
+.bg-mild {
+  background-image: url("../../img/modal-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #159848;
+}
+
+.bg-button {
+  background: #159848;
+}
+
+.bg-button:hover {
+  background: #2b2b2b;
+}
